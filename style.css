@@ -1,0 +1,474 @@
+
+body {
+    background-color: white;
+}
+
+
+#Print {
+    width: 15%;
+  position: absolute;
+  margin-top: -0.4%;
+  
+    
+}
+
+/*Active Menu*/
+
+.active {
+  text-decoration: underline;
+}
+
+
+
+
+/* Menu Style */
+#toggle {
+    width: 28px;
+    position: absolute;
+    padding-top: 5%;
+    padding-left: 16%;
+
+
+
+
+}
+/* Look Menu */
+#toggle span:after,
+#toggle span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -9px;
+
+}
+#toggle span:after{
+  top: 9px;
+}
+#toggle span {
+  position: relative;
+  display: block;
+}
+
+#toggle span,
+#toggle span:after,
+#toggle span:before {
+  width: 100%;
+  height: 5px;
+  background-color: black;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+  border-radius: 2px;
+
+}
+
+/* on activation */
+#toggle.on span {
+  background-color: transparent;
+}
+#toggle.on span:before {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+#toggle.on span:after {
+  transform: rotate(-45deg) translate(7px, -8px);
+}
+#toggle.on + #menu {
+  opacity: 1;
+  visibility: visible;
+
+}
+
+
+
+/* menu where it moves*/
+#menu {
+  position: relative;
+  color: black;
+  width: 200px;
+  font-size: 18px;
+
+
+  font-family: "Kingthings Trypewriter 2", sans-serif;
+  text-align: center;
+  background: white;
+
+  /* just for this demo */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .4s;
+}
+
+#menu:after {
+
+  content: "";
+  display: block;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 20px solid white;
+}
+
+
+
+
+/*Open Menu Style*/
+ul, li, li a {
+
+  display: inline-block;
+  margin: 0;
+  padding: 2;
+
+}
+li a {
+  text-decoration: none;
+  padding: 5px;
+ color: black;
+
+  transition: all .2s;
+
+}
+li a:hover,
+li a:focus {
+  background: #555555;
+  color: #fff;
+}
+
+
+.active {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+/*Social Media*/
+
+
+#socialmedia {
+    text-align: right;
+    margin-top: -3%;
+    padding-right: 10%;
+    position: absolute;
+
+
+}
+  
+
+
+
+#instagram {
+
+    width: 3%;
+    height: auto;
+}
+
+#linkedin {
+
+    width: 3%;
+    height: auto;
+}
+#youtube {
+
+    width: 3%;
+    height: auto;
+}
+#vimeo {
+
+    width: 3%;
+    height: auto;
+}
+#poster {
+    width: 100%;
+    margin-top: 5%;
+  
+    
+    
+
+}
+
+#pictures {
+    float: left;
+    width: 55%;
+    margin-left: -9%;
+
+    
+
+}
+
+
+
+#Text {
+    
+    display: grid;
+
+
+}
+
+
+    
+
+
+
+.Headline{
+    font-size: 66px;
+    font-family: "Gill Sans";
+    font-weight: bold;
+    text-align: right;
+     margin-top: 10%;
+
+}
+
+h3 {
+    font-family: "Kingthings Trypewriter 2";
+    font-size: 16px;
+     text-align: right;
+     padding-left: 10%;
+     line-height: 1.4;
+}
+.Paragraph{
+    margin-top: -10%;
+
+}
+
+
+
+button {
+    float: right;
+    margin-right: 12%;
+    margin-top: 2%;
+    color: black;
+    border: 1px solid #555555;
+    font-size: 30px;
+    font-family: "Gill Sans";
+    padding: 16px 32px;
+
+}
+
+
+
+
+
+button:hover {
+    background-color: #555555;
+    color: white;
+
+}
+
+
+
+h4 {
+    font-family: "Gill Sans";
+    font-size: 11px;
+    position: relative;
+    float: left;
+    margin-left: 80%;
+  
+}
+
+
+h5 {
+    font-family: "Gill Sans";
+    font-size: 11px;
+    float: right;
+   
+    margin-left: 80%;
+    margin-top: 16%;
+
+}
+
+
+/*About Page*/
+
+.aboutprint {
+    font-size: 66px;
+    font-family: "Gill Sans";
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.abouttext {
+    font-size: 17px;
+    font-family: "Kingthings Trypewriter 2";
+    font-weight: normal;
+    text-align: left;
+       line-height: 2.0;
+  margin-left: 20%;
+  margin-right: 10%
+
+}
+
+
+
+
+/*Contact Page*/
+
+/*Contact Form*/
+input[type=text], select, textarea {
+    width: 80%;
+    padding: 20px;
+    border: 0.5px solid black;
+  
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+
+   
+    resize: vertical;
+    font-family: "Kingthings Trypewriter 2";
+    font-size: 17px;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+
+    padding: 12px 100px;
+    border: none;
+  
+    cursor: pointer;
+    font-family: "Kingthings Trypewriter 2";
+}
+
+input[type=password] {
+    width: 80%;
+    padding: 20px;
+    border: 0.5px solid black;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: "Kingthings Trypewriter 2";
+    font-size: 17px;
+}
+
+
+
+#send {
+ font-family: "Kingthings Trypewriter 2";
+ font-size: 25px;
+
+
+}
+
+
+
+
+
+/*Browse Page*/
+/*Table*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15%;
+    margin-left: 5%;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid black;
+    font-family: "Kingthings Trypewriter 2";
+    font-size: 17px;
+}
+
+tr:hover {background-color:#f5f5f5;}
+
+
+
+#submit {
+ font-family: "Kingthings Trypewriter 2";
+ font-size: 17px;
+}
+
+
+
+
+
+
+
+
+/*Upload files*/
+
+#uploadfile{
+
+  width: 500px;
+  height: 200px;
+  border: 4px dashed black;
+  margin-left: 25%;
+  margin-top: 5%;
+}
+#uploadfile p{
+  text-align: center;
+  font-family: "Kingthings Trypewriter 2";
+
+}
+#uploadfile input{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  opacity: 0;
+}
+
+#uploadfile button{
+  margin-right: 0%;
+}
+
+
+
+
+
+
+
+
+
+
+
+div.gallery {
+
+    margin: 10px;
+    margin-top: 30px;
+    margin-left: 20px;
+     border: 1px solid black;
+   float: left;
+    width: 300px;
+    height: 400px
+}
+
+div.gallery:hover {
+    border: 1px dashed #555555;
+}
+
+div.gallery img {
+    width: 100%;
+    height: 100%;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
